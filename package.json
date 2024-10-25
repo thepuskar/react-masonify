@@ -1,0 +1,61 @@
+{
+  "name": "react-masonify",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "main": "./dist/react-masonify.umd.js",
+  "module": "./dist/react-masonify.es.js",
+  "types": "./dist/lib/main.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "ci": "pnpm lint && pnpm type-check"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/react-masonify.es.js",
+      "require": "./dist/react-masonify.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepuskar/react-masonify.git"
+  },
+  "keywords": [],
+  "author": "Puskar Adhikari - @thepuskar",
+  "bugs": {
+    "url": "https://github.com/thepuskar/react-masonify/issues"
+  },
+  "homepage": "https://github.com/thepuskar/react-masonify#readme",
+  "devDependencies": {
+    "@types/node": "22.7.9",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "eslint": "9.13.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-config-standard": "17.1.0",
+    "eslint-config-standard-jsx": "11.0.0",
+    "eslint-config-standard-react": "13.0.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "7.1.0",
+    "eslint-plugin-react": "7.37.2",
+    "husky": "9.1.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.6.3",
+    "vite": "5.4.10",
+    "vite-plugin-dts": "4.3.0",
+    "vite-plugin-linter": "3.0.0",
+    "vite-tsconfig-paths": "5.0.1"
+  }
+}
