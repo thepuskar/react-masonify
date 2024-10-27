@@ -1,4 +1,4 @@
-import { ColumnsCountBreakPoints } from "lib/components/MasonryResponsive";
+import { ColumnsCountBreakPoints } from "lib/components/ResponsiveMasonry";
 import { useMemo } from "react";
 
 const DEFAULT_COLUMNS_COUNT = 1;
