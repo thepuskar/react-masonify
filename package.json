@@ -1,12 +1,20 @@
 {
   "name": "react-masonify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight React component for creating responsive Masonry layouts",
   "license": "MIT",
-  "main": "./dist/react-masonify.umd.js",
-  "module": "./dist/react-masonify.es.js",
-  "types": "./dist/lib/main.d.ts",
   "type": "module",
+  "main": "./dist/react-masonify.cjs.js",
+  "module": "./dist/react-masonify.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-masonify.es.js",
+      "require": "./dist/react-masonify.cjs.js",
+      "default": "./dist/react-masonify.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -19,17 +27,18 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/react-masonify.es.js",
-      "require": "./dist/react-masonify.umd.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thepuskar/react-masonify.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "masonry",
+    "grid",
+    "layout",
+    "responsive",
+    "typescript"
+  ],
   "author": "Puskar Adhikari - @thepuskar",
   "bugs": {
     "url": "https://github.com/thepuskar/react-masonify/issues"
