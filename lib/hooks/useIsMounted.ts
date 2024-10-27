@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef } from "react";
+import { useIsomorphicLayoutEffect } from "./useIsomorphicLayoutEffect";
 
 /**
  * Custom hook that returns a function to check if the component is currently mounted.
@@ -19,7 +20,7 @@ import { useCallback, useEffect, useRef } from "react";
 export function useIsMounted(): () => boolean {
   const isMounted = useRef(false);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     isMounted.current = true;
 
     return () => {
