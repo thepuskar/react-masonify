@@ -1,6 +1,18 @@
 # React Masonify
 
 A lightweight React component library for creating responsive Masonry layouts.
+<br/>
+
+<div>
+  
+![NPM Version](https://img.shields.io/npm/v/react-masonify)
+![NPM Downloads](https://img.shields.io/npm/dw/react-masonify)
+![NPM Downloads](https://img.shields.io/npm/dm/react-masonify)
+[![License](https://badgen.net/badge/License/MIT/blue)]([https://github.com/juliencrn/usehooks-ts/blob/master/LICENSE](https://github.com/thepuskar/react-masonify/blob/main/LICENSE.md))
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%20react-masonify)
+  
+</div>
+
 
 ## Installation
 
@@ -19,11 +31,13 @@ yarn add react-masonify
 - 📱 Breakpoint-based responsiveness
 - 🎨 Customizable gaps and styling
 
+Check out the [Live Example](https://stackblitz.com/edit/react-masonify-demo?file=src%2FApp.jsx) to try it yourself.
+
 ## Components
 
 ### `ResponsiveMasonry`
 
-A wrapper component that handles responsive behavior based on screen width breakpoints.
+A wrapper component that handles responsive behaviour based on screen width breakpoints.
 
 #### Props
 
@@ -146,7 +160,7 @@ const StyledGallery = () => {
 
 ## Browser Support
 
-React Masonify works in all modern browsers that support CSS Flexbox:
+React Masonify works in all modern browsers that support [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox):
 - Chrome/Edge (latest)
 - Firefox (latest)
 - Safari (latest)
@@ -165,4 +179,4 @@ React Masonify is written in TypeScript and includes built-in type definitions.
 
 ## License
 
-MIT License
+This project is [MIT](https://github.com/thepuskar/react-masonify/blob/main/LICENSE.md) licensed.
