@@ -1,4 +1,4 @@
-import Masonry from "@/react-masonify";
+import Masonry, { ResponsiveMasonry } from "@/react-masonify";
 import "./app-style.css";
 import IMG_DATA from "./data.json";
 
@@ -10,11 +10,15 @@ function App() {
           React Masonify - Masonry Grid Layout
         </h1>
         <div className="max-w-7xl mx-auto">
-          <Masonry gap="1rem">
-            {IMG_DATA?.map((src) => (
-              <ImgCard src={src} key={src} />
-            ))}
-          </Masonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            <Masonry gap="1rem">
+              {IMG_DATA?.map((src) => (
+                <ImgCard src={src} key={src} />
+              ))}
+            </Masonry>
+          </ResponsiveMasonry>
         </div>
       </div>
     </div>
