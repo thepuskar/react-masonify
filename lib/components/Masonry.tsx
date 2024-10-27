@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-interface MasonryPropsType {
+export interface MasonryProps {
   children: React.ReactNode;
   columnsCount?: number;
   gap?: string;
-  className?: string;
+  className?: string | null;
   style?: React.CSSProperties;
   containerTag?: keyof JSX.IntrinsicElements;
   itemTag?: keyof JSX.IntrinsicElements;
@@ -12,7 +12,7 @@ interface MasonryPropsType {
   sequential?: boolean;
 }
 
-const Masonry = (props: MasonryPropsType) => {
+const Masonry: React.FC<MasonryProps> = (props) => {
   const {
     children,
     columnsCount = 3,
