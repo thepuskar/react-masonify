@@ -1,5 +1,3 @@
-export function Hello () {
-  return (
-    <h1> Hello </h1>
-  )
-}
+import Masonry from "./components/Masonry";
+
+export default Masonry;
