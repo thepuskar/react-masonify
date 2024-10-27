@@ -6,7 +6,7 @@ export type ColumnsCountBreakPoints = {
   [key: number]: number;
 };
 
-interface ResponsiveMasonryProps {
+export interface ResponsiveMasonryProps {
   columnsCountBreakPoints?: ColumnsCountBreakPoints;
   children: React.ReactNode;
   className?: string | null;
